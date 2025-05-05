@@ -177,6 +177,38 @@
         font-size: 1.25rem;
         margin-bottom: 1rem;
       }
+      html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem 1rem;
+    max-width: 90%;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toggle-switch {
+    font-size: 0.8rem;
+    right: 0.5rem;
+  }
+
+  .sns-icons {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+}
+
+.sns-icons a img {
+  max-width: 100%;
+}
     </style>
   </head>
   <body>
@@ -191,7 +223,7 @@
       <img src="Profile Images.png" alt="プロフィール画像" class="profile-img" />
       <p>Hello, World!</p>
 
-      <div class="sns-icons" style="margin: 1rem 0; display: flex; justify-content: center; gap: 1rem; flex-direction: row-reverse;">
+      <div class="sns-icons" style="margin: 1rem 0; display: flex; justify-content: center; gap: 1rem;">
         <a href="https://www.instagram.com/ryunosuke_233/" target="_blank">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
         </a>
@@ -201,7 +233,7 @@
         <a href="https://github.com/ryunosuke233" target="_blank">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
         </a>
-      </div>
+      </div>      
 
       <button class="button" onclick="document.getElementById('aboutModal').showModal()">About Me</button>
 
